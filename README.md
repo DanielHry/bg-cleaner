@@ -30,7 +30,7 @@ Upload a photo, get a clean alpha matte, fine-tune it with brightness / contrast
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-org>/bg-cleaner.git
+git clone https://github.com/DanielHry/bg-cleaner.git
 cd bg-cleaner
 ```
 
