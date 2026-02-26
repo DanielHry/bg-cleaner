@@ -1,0 +1,34 @@
+[project]
+name = "bg-cleaner"
+version = "0.1.0"
+description = "Portrait background removal using MODNet & RMBG-2.0"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.45",
+    "pillow>=11.0",
+    "numpy>=1.26",
+    "pydantic>=2.10",
+    "pydantic-settings>=2.7",
+    "streamlit-image-comparison>=0.0.4",
+    "onnxruntime>=1.19",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "onnxruntime-gpu>=1.19",
+    "nvidia-cudnn-cu12",
+]
+
+[project.scripts]
+bg-cleaner = "bgcleaner.ui.app:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.8",
+]

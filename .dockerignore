@@ -1,0 +1,35 @@
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+.venv
+.env
+
+# IDE
+.vscode
+.idea
+
+# Tests (not needed in production image)
+tests/
+
+# Models (mounted at runtime)
+assets/models/*.onnx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.egg-info
+dist/
+build/
+
+# uv
+uv.lock
+
+# Windows launcher
+launch.bat
